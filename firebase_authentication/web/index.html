@@ -25,12 +25,27 @@
 
   <title>firebase_authentication</title>
   <link rel="manifest" href="manifest.json">
+  <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.8.0/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-analytics.js"></script>
 </head>
 <body>
   <!-- This script installs service_worker.js to provide PWA functionality to
        application. For more information, see:
        https://developers.google.com/web/fundamentals/primers/service-workers -->
   <script>
+    var firebaseConfig = {
+    apiKey: "***************API KEY********************",
+    authDomain: "*****************Auth Domain ***************",
+    projectId: "************** Project Id **************",
+    storageBucket: "************Storage Bucket************",
+    messagingSenderId: "*********Sender Id ***************",
+    appId: "******************** App Id *************",
+    measurementId: "************ Measurement Id***************"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
     var serviceWorkerVersion = null;
     var scriptLoaded = false;
     function loadMainDartJs() {

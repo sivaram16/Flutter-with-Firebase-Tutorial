@@ -93,8 +93,15 @@ class _MyHomePageState extends State<MyHomePage> {
               height: 20,
             ),
             ElevatedButton(
-                onPressed: () {
-                  //    FirebaseHelper.signInWithGoogle(context: context);
+                onPressed: () async {
+                  UserCredential? userCredential =
+                      await FirebaseHelper.signInWithGoogle(context: context);
+                  if (userCredential != null) {
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => HomeScreen(userCredential)));
+                  }
                 },
                 child: Text("Sign in with google")),
           ],
