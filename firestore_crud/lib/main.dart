@@ -44,6 +44,14 @@ class _MyHomePageState extends State<MyHomePage> {
             if (snapshot.hasError) {
               return Text('Something went wrong');
             } else if (snapshot.hasData || snapshot.data != null) {
+              if (snapshot.data!.docs.isEmpty) {
+                return Center(
+                  child: Text(
+                    "No data's found",
+                    style: TextStyle(fontSize: 20),
+                  ),
+                );
+              }
               return ListView.separated(
                 separatorBuilder: (context, index) => SizedBox(height: 10.0),
                 itemCount: snapshot.data!.docs.length,
@@ -93,7 +101,6 @@ class _ListItem extends StatelessWidget {
       ),
       subtitle: Text(
         checkList.description,
-        maxLines: 1,
         overflow: TextOverflow.ellipsis,
       ),
       trailing: Container(
