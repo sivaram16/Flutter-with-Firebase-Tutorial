@@ -1,16 +1,23 @@
-# firebase_storage_demo
+# Firebase Storage and Flutter Web Hosting
 
-A new Flutter project.
 
-## Getting Started
+## Tutorial Video : https://youtu.be/Nu55o-QrgVM
 
-This project is a starting point for a Flutter application.
+<br>
 
-A few resources to get you started if this is your first Flutter project:
+## Firebase SDK Setup [Android, IOS, Web] : https://youtu.be/9UKLcgv_2BE
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+<br>
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Flutter with Firebase Series : https://www.youtube.com/playlist?list=PL5jLv6ROV1asdeDs2QgvcS6R9IA5ng2L0
+
+<br>
+<br>
+
+## Note : Don't forgot to include firebase config file.
+
+- In Android : google-services.json
+
+- In IOS : Google-Service-Info.plist
+
+- In Web : Script Tags
