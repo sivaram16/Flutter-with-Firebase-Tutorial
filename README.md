@@ -16,8 +16,6 @@
 
 - Firebase Cloud and In App Messaging
 
-- Firebase AdMob
-
 
 
 ## Channel Link : https://www.youtube.com/channel/UCdRuSIJYUgQqZfOXEp50yYg
